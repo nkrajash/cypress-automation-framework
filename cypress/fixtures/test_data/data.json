@@ -1,0 +1,17 @@
+[
+    {
+        "fileName": "image1.jpeg",
+        "mimeType": "image/jpeg",
+        "isUploadTrue" : true
+    },
+    {
+        "fileName": "image1.jpeg",
+        "mimeType": "image/jpeg",
+        "isUploadTrue" : false
+    },
+    {
+        "fileName": "chromedriver_win32.zip",
+        "mimeType": "application/zip",
+        "isUploadTrue" : true
+    }
+]

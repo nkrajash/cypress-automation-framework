@@ -1,0 +1,28 @@
+{
+    "baseUrl"  : "https://www.webdriveruniversity.com",
+    "chromeWebSecurity":false,
+    "defaultCommandTimeout" : 10000,
+    "execTimeout": 60000,
+    "pageLoadTimeout" : 60000,
+    "ignoreTestFiles" : "**/other/*",
+    "requestTimeout" : 15000,
+    "responseTimeout" : 15000,
+    "reporter": "mocha-junit-reporter",
+    "reporterOptions": {
+      "configFile": "reporter-config.json",
+      "reportDir":"cypress/reports", 
+      "reportFilename": "report",
+      "overwrite": false,
+      "html": true,
+      "json": true, 
+      "charts": true
+    },
+    "video": true,
+    "env":{
+      "RETRIES":2,
+      "webdriverUni_homePage" : "https://www.webdriveruniversity.com",
+      "first_name":"sarah",
+      "last_name" :"taylor" 
+    },
+    "projectId": "e4783r"
+  }
