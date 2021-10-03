@@ -37,7 +37,7 @@ describe("Verify variables, Cypress commands and jQuery commands", () => {
     });
 
     it.only("Validate properties of the Contact Us page", () => {
-        cy.visit("https://automationteststore.com/index.php?rt=content/contact")
+        cy.visit("https://www.automationteststore.com/index.php?rt=content/contact")
 
         //Uses cypress commands and chaining
         cy.contains('#ContactUsFrm','Contact Us Form').find('#field_11').should('contain','First name')
