@@ -77,7 +77,9 @@ module.exports = (on,config) => {
   return getConfigurationByFile(file)
 }
 
+/*
 module.exports = (on,config) => {
   //add libs of cypress-plugin-retries 
   require('cypress-plugin-retries/lib/plugin')(on)
 }
+*/

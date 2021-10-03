@@ -10,14 +10,14 @@
     "reporter": "mocha-junit-reporter",
     "reporterOptions": {
       "configFile": "reporter-config.json",
-      "reportDir":"cypress/reports", 
+      "reportDir":"cypress/results", 
       "reportFilename": "report",
       "overwrite": false,
       "html": true,
       "json": true, 
       "charts": true
     },
-    "video": true,
+    "video": false,
     "env":{
       "RETRIES":2,
       "webdriverUni_homePage" : "https://www.webdriveruniversity.com",
