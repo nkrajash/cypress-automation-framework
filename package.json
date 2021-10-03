@@ -16,6 +16,7 @@
     "triggerAllTests-mytests": "npx cypress run --spec cypress/integration/mytests/*",
     "triggerAllTests-pom": "npx cypress run --spec cypress/integration/pageObjects/*",
     "triggerAllTests-autostore": "npx cypress run --spec cypress/integration/automation-test-store/*",
+    "triggerAllTests-autostore-dashboard": "npx cypress run --spec cypress/integration/automation-test-store/* --record --key 8ea00e6c-0795-4bca-ad07-ed0a158d3f30",
     "junit-merge": "npx junit-merge -d cypress/reports/junit -o cypress/reports/junit/reports.xml",
     "delete-junit-report": "rm -rf cypress/reports/junit/reports.xml",
     "delete-reports": "rm -rf cypress/reports/* || true",
