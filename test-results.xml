@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="71.8300" tests="3" failures="2">
+  <testsuite name="Root Suite" timestamp="2021-10-03T15:47:15" tests="0" file="cypress/integration/automation-test-store/alias-invoke.js" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="Alias and invoke" timestamp="2021-10-03T15:47:16" tests="3" time="71.8300" failures="2">
+    <testcase name="Alias and invoke Validate a specific hair care product" time="0.0000" classname="Validate a specific hair care product">
+      <failure message="`cy.screenshot()` timed out waiting `15000ms` to complete." type="CypressError"><![CDATA[CypressError: `cy.screenshot()` timed out waiting `15000ms` to complete.
+    at https://www.automationteststore.com/__cypress/runner/cypress_runner.js:145421:22
+    at tryCatcher (https://www.automationteststore.com/__cypress/runner/cypress_runner.js:13212:23)
+    at https://www.automationteststore.com/__cypress/runner/cypress_runner.js:8334:41
+    at tryCatcher (https://www.automationteststore.com/__cypress/runner/cypress_runner.js:13212:23)
+    at Promise._settlePromiseFromHandler (https://www.automationteststore.com/__cypress/runner/cypress_runner.js:11147:31)
+    at Promise._settlePromise (https://www.automationteststore.com/__cypress/runner/cypress_runner.js:11204:18)
+    at Promise._settlePromise0 (https://www.automationteststore.com/__cypress/runner/cypress_runner.js:11249:10)
+    at Promise._settlePromises (https://www.automationteststore.com/__cypress/runner/cypress_runner.js:11325:18)
+    at _drainQueueStep (https://www.automationteststore.com/__cypress/runner/cypress_runner.js:7919:12)
+    at _drainQueue (https://www.automationteststore.com/__cypress/runner/cypress_runner.js:7912:9)
+    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://www.automationteststore.com/__cypress/runner/cypress_runner.js:7928:5)
+    at Async.drainQueues (https://www.automationteststore.com/__cypress/runner/cypress_runner.js:7798:14)]]></failure>
+    </testcase>
+    <testcase name="Alias and invoke Validate product thumbnail" time="71.8300" classname="Validate product thumbnail">
+    </testcase>
+    <testcase name="Alias and invoke Calculate total of normal sale and non-sale products" time="0.0000" classname="Calculate total of normal sale and non-sale products">
+      <failure message="expected 654.1 to equal 616.7" type="AssertionError"><![CDATA[AssertionError: expected 654.1 to equal 616.7
+    at Context.eval (https://www.automationteststore.com/__cypress/tests?p=cypress\integration\automation-test-store\alias-invoke.js:157:29)]]></failure>
+    </testcase>
+  </testsuite>
+</testsuites>
