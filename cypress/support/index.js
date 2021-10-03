@@ -14,7 +14,6 @@
 // ***********************************************************
 
 // Import commands.js using ES2015 syntax:
-require('cypress-plugin-retries')
 require('cypress-xpath')
 import './commands'
 

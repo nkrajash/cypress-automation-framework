@@ -76,10 +76,3 @@ module.exports = (on,config) => {
   const file = config.env.configFile || 'development'
   return getConfigurationByFile(file)
 }
-
-/*
-module.exports = (on,config) => {
-  //add libs of cypress-plugin-retries 
-  require('cypress-plugin-retries/lib/plugin')(on)
-}
-*/

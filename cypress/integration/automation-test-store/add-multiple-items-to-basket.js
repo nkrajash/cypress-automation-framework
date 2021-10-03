@@ -9,7 +9,7 @@ describe("Add multiple items to basket", () => {
     beforeEach( function() {
         cy.clearLocalStorage()
         cy.clearCookies()
-        cy.visit("https://automationteststore.com/")
+        cy.visit("https://www.automationteststore.com/")
         cy.get("a[href*='product/category&path=']").contains("Hair Care").click()
     })
 
