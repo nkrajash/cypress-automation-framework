@@ -7,7 +7,7 @@
     "ignoreTestFiles" : "**/other/*",
     "requestTimeout" : 15000,
     "responseTimeout" : 15000,
-    "reporter": "mocha-junit-reporter",
+    "reporter": "cypress-multi-reporters",
     "reporterOptions": {
       "configFile": "reporter-config.json",
       "reportDir":"cypress/results", 
