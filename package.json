@@ -13,10 +13,10 @@
     "triggerAllTests-autostore": "npx cypress run --spec cypress/integration/automation-test-store/*",
     "triggerAllTests-autostore-dashboard": "npx cypress run --spec cypress/integration/automation-test-store/* --record --key 4a9d3361-6db1-433d-9307-4baf8d05f6e9",
     "junit-merge": "npx junit-merge -d cypress/results/junit -o cypress/results/junit/results.xml",
-    "delete-junit-results": "rm -rf cypress/results/junit/results.xml",
-    "delete-results": "rm -rf cypress/results/* || true",
+    "delete-junit-results": "rd /s /q cypress/results/junit/results.xml",
+    "delete-results": "rd /s /q cypress/results/* || true",
     "mochawesome-merge": "npx mochawesome-merge cypress/results/mochawesome/*.json > mochawesome.json && npx marge mochawesome.json",
-    "delete-mochawesome-results": "rm -rf mochawesome-report/* || true",
+    "delete-mochawesome-results": "rd /s /q mochawesome-report/* || true",
     "cypress-regression-pack": "npm run delete-results && npm run delete-mochawesome-results &&  npm run triggerAllTests-headless && npm run mochawesome-merge",
     "triggerAllTests-staging": "npx cypress open --env configFile=staging",
     "cypress-multi-browser": "npm run triggerAllTests-autostore -- --browser electron --headed & npm run triggerAllTests-autostore -- --browser edge --headed"
