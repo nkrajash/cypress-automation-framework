@@ -13,7 +13,6 @@ describe("Test contact-us form via Automation-test-store", () => {
         //cy.xpath("//a[contains(@href,'contact')]").click() //using cypress-xpath package
 
          //improved CSS Selector - dynamic selector
-        //cy.get("a[href$='contact']").click().then(function(linkText) {
         cy.get("a[href$='contact555']").click().then(function(linkText) {
             cy.log("Clicked on the link using text:" + linkText.text())
         })
