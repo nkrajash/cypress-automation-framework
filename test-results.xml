@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites name="Mocha Tests" time="0.0000" tests="1" failures="1">
-  <testsuite name="Root Suite" timestamp="2021-10-03T17:05:42" tests="0" file="cypress/integration/automation-test-store/add-multiple-items-to-basket.js" time="0.0000" failures="0">
+  <testsuite name="Root Suite" timestamp="2021-10-03T19:48:40" tests="0" file="cypress/integration/automation-test-store/add-multiple-items-to-basket.js" time="0.0000" failures="0">
   </testsuite>
-  <testsuite name="Add multiple items to basket" timestamp="2021-10-03T17:05:42" tests="1" time="0.0000" failures="1">
+  <testsuite name="Add multiple items to basket" timestamp="2021-10-03T19:48:40" tests="1" time="0.0000" failures="1">
     <testcase name="Add multiple items to basket Add specific items to basket" time="0.0000" classname="Add specific items to basket">
       <failure message="Timed out retrying after 10000ms: Expected to find element: `.dropdowntoggle &gt; .fa`, but never found it." type="AssertionError"><![CDATA[AssertionError: Timed out retrying after 10000ms: Expected to find element: `.dropdowntoggle > .fa`, but never found it.
-    at Context.eval (https://automationteststore.com/__cypress/tests?p=cypress\integration\automation-test-store\add-multiple-items-to-basket.js:115:8)]]></failure>
+    at Context.eval (https://www.automationteststore.com/__cypress/tests?p=cypress\integration\automation-test-store\add-multiple-items-to-basket.js:115:8)]]></failure>
     </testcase>
   </testsuite>
 </testsuites>

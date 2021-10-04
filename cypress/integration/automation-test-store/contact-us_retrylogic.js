@@ -1,8 +1,7 @@
 describe("Test contact-us form via Automation-test-store", () => {
     //it.only runs that single test case only.
-    it("should be able to submit a successful submission via contact-us form ", () => {
+    it("should be able to submit a successful submission via contact-us form ", {retries:4}, () => {
         //Adding retry logic to tests
-        Cypress.currentTest.retries(4)
         //cypress code
         //cy.visit("https://www.webdriveruniversity.com") //click on remote URL
         //cy.get("#contact-us > .thumbnail").click() //Click a DOM element.

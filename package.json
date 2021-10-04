@@ -25,7 +25,6 @@
     "cypress-regression-pack": "npm run delete-results && npm run delete-mochawesome-results &&  npm run triggerAllTests-headless && npm run mochawesome-merge",
     "triggerAllTests-staging": "npx cypress open --env configFile=staging",
     "cypress-multi-browser": "npm run triggerAllTests-autostore -- --browser electron --headed & npm run triggerAllTests-autostore -- --browser edge --headed"
-    
   },
   "author": "Naveen Kumar Rajashekar",
   "license": "ISC",

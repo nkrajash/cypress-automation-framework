@@ -19,7 +19,7 @@
     },
     "video": false,
     "env":{
-      "RETRIES":2,
+      "retries": { "openMode": 0, "runMode": 2 },
       "webdriverUni_homePage" : "https://www.webdriveruniversity.com",
       "first_name":"sarah",
       "last_name" :"taylor" 
