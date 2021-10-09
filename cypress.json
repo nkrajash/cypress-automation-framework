@@ -4,7 +4,6 @@
     "defaultCommandTimeout" : 10000,
     "execTimeout": 60000,
     "pageLoadTimeout" : 60000,
-    "ignoreTestFiles" : "**/other/*",
     "requestTimeout" : 15000,
     "responseTimeout" : 15000,
     "reporter": "cypress-multi-reporters",
