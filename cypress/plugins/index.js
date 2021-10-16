@@ -76,3 +76,8 @@ module.exports = (on,config) => {
   const file = config.env.configFile || 'development'
   return getConfigurationByFile(file)
 }
+
+const cucumber = require('cypress-cucumber-preprocessor').default
+module.exports = (on, config) => {
+  on('file:preprocessor', cucumber())
+}

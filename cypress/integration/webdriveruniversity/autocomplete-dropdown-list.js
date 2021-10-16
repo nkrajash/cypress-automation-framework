@@ -17,6 +17,8 @@ describe("Interact AutoComplete dropdown lists via WebDriverUni", () => {
             const productToSelect = 'Almond'
             if(prod === productToSelect){
                 cy.wrap($el).click()
+				//or else use below line
+				//$el.trigger("click")
                 cy.get("#submit-button").click()
                 cy.url().should("include",productToSelect)
             }

@@ -23,5 +23,7 @@
       "first_name":"sarah",
       "last_name" :"taylor" 
     },
-    "projectId": "e4783r"
-  }
+    "testFiles": "**/*.feature",
+    "projectId": "e4783r",
+    "experimentalStudio" : false
+}

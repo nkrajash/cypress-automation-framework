@@ -9,9 +9,11 @@
     "triggerAllTests-chrome": "npx cypress run --browser chrome",
     "triggerAllTests-dashboard": "npx cypress run --record --key 4a9d3361-6db1-433d-9307-4baf8d05f6e9",
     "triggerAllTests-webdriveruni": "npx cypress run --spec cypress/integration/webdriveruniversity/*",
+    "triggerAllTests-webdriveruni-dashboard": "npx cypress run --spec cypress/integration/webdriveruniversity/* --record --key 4a9d3361-6db1-433d-9307-4baf8d05f6e9 --parallel --browser chrome --headed",
     "triggerAllTests-pom": "npx cypress run --spec cypress/integration/pageObjects/*",
     "triggerAllTests-autostore": "npx cypress run --spec cypress/integration/automation-test-store/*",
-    "triggerAllTests-autostore-dashboard": "npx cypress run --spec cypress/integration/automation-test-store/* --record --key 4a9d3361-6db1-433d-9307-4baf8d05f6e9",
+    "triggerAllTests-autostore-dashboard": "npx cypress run --spec cypress/integration/automation-test-store/* --record --key 4a9d3361-6db1-433d-9307-4baf8d05f6e9 --parallel --browser chrome --headed",
+    "triggerAllTests-cucumberTests": "npx cypress run --spec cypress/integration/webdriveruniversity/features/*.feature --browser chrome",
     "junit-merge": "npx junit-merge -d cypress/results/junit -o cypress/results/junit/results.xml",
     "delete-junit-results": "rd /s /q cypress/results/junit/results.xml",
     "delete-results": "rd /s /q cypress/results/* || true",
@@ -24,7 +26,8 @@
   "author": "Naveen Kumar Rajashekar",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^8.5.0",
+    "cypress": "^8.6.0",
+    "cypress-cucumber-preprocessor": "^4.3.0",
     "cypress-file-upload": "^5.0.8",
     "cypress-multi-reporters": "^1.5.0",
     "cypress-xpath": "^1.6.2",
@@ -36,5 +39,8 @@
   "dependencies": {
     "node-xlsx": "^0.17.2",
     "xlsx": "^0.17.2"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true
   }
 }
